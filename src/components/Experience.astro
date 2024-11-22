@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Agosto 2022 - Julio 2024",
+    title: "Becario del área de TI",
+    company: "UNIFRANZ",
+    description:
+      "Apoyo en la resolución de incidencias técnicas y mantenimiento de equipos informáticos Soporte y asistencia técnica a los usuarios. Colaboración de mejora y optimización de infraestructura de redes. Manejo de la configuración y operaciones con equipos de audio y vídeo para eventos en vivo, conferenciasy presentaciones.",
+  },
+  {
+    date: "Febrero 2021 - Abril 2023",
+    title: "Pasante como profesor de computación",
+    company: "COOPERAND",
+    description:
+      "Apoyo en el mantenimiento y solución de problemas de los equipos de cómputo utilizados por los estudiantes. Dirigir de forma ocasional las clases de computo, brindando instrucciones claras y facilitando la participación activa de los estudiantes. Asistencia adicional a los estudiantes en la comprensión de los conceptos y en el uso de los programas y herramientas informáticas.",
+  },
+  
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
