@@ -6,6 +6,7 @@ import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 import Python from "./icons/Python.astro"
 import Laravel from "./icons/Laravel.astro"
+import Php from "./icons/Php.astro"
 
 
 const TAGS = {
@@ -29,6 +30,11 @@ const TAGS = {
     class: "bg-red-600 text-white", // Color para representar Laravel
     icon: Laravel,
   },
+  PHP: {
+    name: "Php",
+    class: "bg-purple-500 text-white", // Color para representar Php
+    icon: Php,
+  },
 }
 const PROJECTS = [
   {
@@ -43,10 +49,10 @@ const PROJECTS = [
   {
     title: "Sistema de inventario para el FabLab",
     description:
-      "Es un sistema que se utiliza para administrar los insumos que se tienen en el FabLab, generar reportes y revisar los datos en tiempo real",
+      "Es un sistema que se utiliza para administrar los insumos que se tienen en el FabLab, generar reportes y revisar los datos en tiempo real. Se utilizaron las tecnologías de Laravel, Tailwind, Php y el framework de Php, llamado Filament Php.",
     link: "https://adventjs.dev",
     image: "/projects/adventjs.webp",
-    tags: [TAGS.LARAVEL, TAGS.TAILWIND],
+    tags: [TAGS.LARAVEL, TAGS.TAILWIND, TAGS.PHP],
   },
 ]
 ---
